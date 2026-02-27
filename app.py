@@ -1,3 +1,4 @@
+import streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -38,3 +39,4 @@ if user_input:
     else:
         st.success(f"✅ Not Cyberbullying")
         st.write(f"Confidence: {confidence:.2f}%")
+
