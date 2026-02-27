@@ -1,3 +1,7 @@
+import nltk
+nltk.download('punkt')
+nltk.download('punkt_tab')
+
 import streamlit as st
 import pickle
 import re
@@ -45,4 +49,5 @@ if st.button("Predict"):
             st.error("⚠️ Cyberbullying Detected")
         else:
             st.success("✅ Normal Comment")
+
 
